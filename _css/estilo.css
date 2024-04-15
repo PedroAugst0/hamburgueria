@@ -157,32 +157,3 @@ footer {
   color: var(--primeira-cor);
 }
 footer table tr td { width: 15em;}
-/* Calculadora */
-ul { list-style-type:none; padding-left: 10px;}
-#myList li{ 
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
-  font-size: 20px;
-  height:25px; 
-  margin: 15px 0 30px 0; 
-}
-#preco_total, #texto_pedido { text-align: center; font-weight: bold; font-size: 40px ; color: var(--segunda-cor); }
-#texto_pedido h3 { visibility: hidden;}
-/* Imprimir */
-@media print {
-  body * {
-    visibility: hidden;
-    font-family: 'Share Tech Mono', monospace;
-  }
-  .printable, .printable * {
-    visibility: visible;
-  }
-  .printable {
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-  .printable button { visibility: hidden;}
-  #texto_pedido h3 { visibility: visible;}
-}
